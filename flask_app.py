@@ -13,8 +13,8 @@ def process_inputs():
     dropdown = request.form.get('input_dropdown', '')
     select = request.form.get('input_select', '')
     freeform = request.form.get('input_freeform', '')
-    if not re.compile('[A-z]').fullmatch(name):
+    if re.compile('[^A-z]').search(name):
         return render_template("main_page.html", input_data=dropdown,
-                    output="invalid input for %s." % name)
+                           output="Invalid name: '%s'." % name)
     return render_template("main_page.html", input_data=dropdown,
                            output="You're a wizard %s." % name)
