@@ -17,34 +17,34 @@
     <div class="container">
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
-          <label for="input_name">First Name</label>
+          <label for="input_name">Name</label>
           <input type="text" class="form-control" name="input_name"  id="input_name" placeholder="Fred Flintstone">
         </div>
         <div class="form-group">
-          <label for="input_dropdown">Example select</label>
+          <label for="input_dropdown">Grade Level</label>
           <select class="form-control" name="input_dropdown" id="input_dropdown">
-            <option>1 fish</option>
-            <option>2 fish</option>
-            <option>red fish</option>
-            <option>the spanish inquisition</option>
-            <option>blue fish</option>
+            <option>9th</option>
+            <option>10th</option>
+            <option>11th</option>
+            <option>12th</option>
+            <option>Above 12th</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_select">Example multiple select</label>
+          <label for="input_select">Favorite Color</label>
           <select multiple class="form-control" name="input_select" id="input_select">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option>Orange</option>
+            <option>Purple</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="input_freeform">Example textarea</label>
+          <label for="input_freeform">Any notes?</label>
           <textarea class="form-control" name="input_freeform" id="input_freeform" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href=/submit>Submit</a>
       </form>
     </div>
     <div class="container">
